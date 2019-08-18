@@ -111,9 +111,9 @@
                             </td>
                             
                             <td>
-                                Invoice #: 001<br>
-                                Created: Aug 10, 2019<br>
-                                Due: Aug 15, 2019
+                                    Invoice Number:
+                                <p id="invno"></p>
+                                <p id="date"></p>
                             </td>
                         </tr>
                     </table>
@@ -208,5 +208,7 @@
             </tr>
         </table>
     </div>
+    <Script> document.getElementById('date').innerHTML = Date(); </Script>
+    <Script> document.getElementById('invno').innerHTML = Math.random(); </Script>
 </body>
 </html>
